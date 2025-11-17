@@ -15,11 +15,6 @@ async fn health_check() -> impl Responder {
 }
 
 async fn subscribe(form: web::Form<FormData>) -> impl Responder {
-    //let name = req.match_name();
-    print!(
-        "The new user is {} and his mail is {}.",
-        form.name, form.email
-    );
     HttpResponse::Ok()
 }
 
